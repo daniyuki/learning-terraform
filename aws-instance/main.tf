@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "learn-terraform-2021"
     workspaces {
-      name = "Example-Workspace"
+      name = "learning-terraform-2021"
     }
   }
 
