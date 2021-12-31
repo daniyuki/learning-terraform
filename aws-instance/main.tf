@@ -1,10 +1,10 @@
 terraform {
-  cloud {
-    organization = "learn-terraform-2021"
-    workspaces {
-      name = "learning-terraform-2021"
-    }
-  }
+#  cloud {
+#    organization = "learn-terraform-2021"
+#    workspaces {
+#      name = "learning-terraform-2021"
+#    }
+#  }
 
   required_providers {
     aws = {
