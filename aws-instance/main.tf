@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "learn-terraform-2021"
+    workspaces {
+      name = "Example-Workspace"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -18,7 +25,6 @@ resource "aws_instance" "app-server" {
   ami           = "ami-05d34d340fb1d89e5"
   instance_type = "t2.micro"
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = var.instance_name
   }
 }
-
